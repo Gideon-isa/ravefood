@@ -1,0 +1,34 @@
+{{define "base"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-header">
+        <h1 class="header">Rave Foods</h1>
+
+        <nav class="navg">
+          <div class="dropdown">
+            <button>Kitchens</button>
+            <div class="dropdown-options">
+              <a href="/nigerian-food">Nigerian Food</a>
+              <a href="/igbo-food">Igbo Food</a>
+              <a href="/calabar-food">Calabar Food</a>
+            </div>
+          </div>
+
+          <a class="signup" href="/signup">Sign Up</a>
+        </nav>
+      </div>
+    </div>
+
+    {{block "content" .}} {{end}} {{block "js" .}} {{end}}
+  </body>
+</html>
+{{end}}

@@ -1,0 +1,61 @@
+{{template "base" .}}
+<main class="order">
+  <form action="" method="post">
+    <div class="soup-swallow">
+      <div>
+        <label for="sallow">Sallow</label>
+        <select name="" id="sallow">
+          <option value=""></option>
+          <option value="">Eba</option>
+          <option value="">Semo</option>
+          <option value="">Fufu</option>
+          <option value="">Amala</option>
+          <option value="">Pounded Yam</option>
+          <option value="">Towoo</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Soup</label>
+        <select name="" id="soup">
+          <option value=""></option>
+          <option value="">Egusi</option>
+          <option value="">Okro</option>
+          <option value="">Oha</option>
+          <option value="">Edikaikong</option>
+          <option value="">Nsala</option>
+          <option value="">okazi</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="extra">
+      <label for="">Extra</label>
+
+      <div class="add-count">
+        <div class="add-meat">
+          <!-- <input type="checkbox" />Goat <input type="checkbox" />chicken
+          <input type="checkbox" />Cow Meat <input type="checkbox" />fish -->
+          <div><label for="">Goat</label></div>
+          <div><label for="">chicken</label></div>
+          <div><label for="">Cow Meat</label></div>
+          <div><label for="">Fish</label></div>
+        </div>
+        <div class="add-input">
+          <input type="number" name="" id="" />
+          <input type="number" name="" id="" />
+          <input type="number" name="" id="" />
+          <input type="number" name="" id="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="submit-btn">
+      <div>
+        <label for="">Number of plate</label>
+        <input type="number" name="" id="number" />
+      </div>
+      <button type="submit">Order</button>
+    </div>
+    <input type="text" name="" id="" />{{index .StringMap "test"}}
+  </form>
+</main>
